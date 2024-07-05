@@ -1,30 +1,12 @@
-# React + TypeScript + Vite
+# Toggle Password Visibility
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This simple base Vite app contains a component for toggling a password field to be visible or encrypted with the typical "********".
+It also includes a very simple tooltip for the toggle icon that can be modified to your preference
 
 Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Reusing the component
 
-## Expanding the ESLint configuration
+Just extract the PasswordInput.tsx component from the project and reuse it as necessary. Hope I saved you a little time! Star the repository if you found this useful.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+![](https://imgur.com/imOi57e)
